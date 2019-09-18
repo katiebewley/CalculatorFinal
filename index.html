@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>compound interest calculator</title>
+	<meta name="description" content="DESCRIPTION">
+	<link rel="stylesheet" href="calculator.css">
+
+	<!--[if lt IE 9]>
+	<script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<h1>compound interest calculator</h1>
+		<div class= "definition"> <p>this formula is to provide help through calculating <br>
+		the amount of interest under a certain duration of time.</p> </div>
+	<form>
+		<ul>
+			<li>
+					<label for="amount"> <div class="starting-amount">
+					starting amount ($)</label>
+						<input type="number" class="starting-amount-input" name="amount" value="1000"> </div></div>
+			</li>
+			<li>
+				<label for="interest"><div class="interest-rate">interest rate (%)</label>
+					<input type="number" <div class="interest-rate-input" name="interest" value="2"></div> </div
+			</li>
+			<li>
+				<label for="contribution"><div class="annual-contribution"> annual contribution ($)</label>
+					<input type="number" <div class="annual-contribution-input" name="contribution" value="0"></div></div>
+			</li>
+			<li>
+				<label for="duration"><div class="duration"> duration (years)</label>
+					<input type="number" <div class="duration-input" name="duration" value="10"> </div> </div>
+			</li>
+		</ul>
+		<button type="button" onclick="calculate()">submit</button>
+	</form>
+	<section>
+		<div class="hidden"> <h2>Results</h2></div>
+				<div class="hidden"><p>starting amount: <strong class="starting-val">$1000</strong>
+						<div class="starting-bar"></div></p> </div>
+				<div class="contribution-total"> <p>contribution<br>total <br><strong class="contribution-val"><br>$0.00</strong></div>
+						<div class="contribution-bar"></div></p></div>
+				<div class="hidden"><p>Return total: <strong class="return-val">$0.00</strong>
+						<div class="return-bar"></div></div>
+		<div class= "final-amount"><p>final amount in <strong class="duration-val"><br>10</strong> years<br><strong class="final-val">$1218.99</strong></p></div>
+	</section>
+	<script type="text/javascript" src="calculator.js"></script>
+</body>
+</html>
